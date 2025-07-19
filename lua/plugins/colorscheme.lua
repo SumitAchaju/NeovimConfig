@@ -2,7 +2,7 @@ return {
   {
     "loctvl842/monokai-pro.nvim",
     opts = {
-      transparent_background = false,
+      transparent_background = true,
       terminal_colors = true,
       devicons = true, -- highlight the icons of `nvim-web-devicons`
       styles = {
@@ -42,6 +42,8 @@ return {
         indent_blankline = {
           context_highlight = "default", -- default | pro
           context_start_underline = false,
+          context_enable = true,
+          show_current_context = true,
         },
       },
     },

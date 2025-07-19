@@ -4,3 +4,7 @@
 
 vim.api.nvim_set_keymap("n", "<C-o>", ":RunScript<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<C-i>", ":bdelete!<CR>", { noremap = true, silent = true })
+
+-- Key mappings for toggling terminals
+vim.keymap.set("n", "<C-j>", "<cmd>lua _TMUX_TOGGLE()<CR>", { noremap = true, silent = true })
+vim.keymap.set("t", "<C-j>", "<cmd>close<CR>", { noremap = true, silent = true })
